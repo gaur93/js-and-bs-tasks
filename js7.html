@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<title>js task7</title>
+<head>
+  <style>
+    #train {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+    <h1>click on the image to start animation</h1>
+    
+
+  <img id="train" src="https://js.cx/clipart/train.gif">
+
+
+  <script>
+    
+    train.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        train.style.left = timePassed / 5 + 'px';
+
+        if (timePassed > 7000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head>
+   <title>jstask 2</title>
+</head>
+<body>
+   <div id="result"></div>
+   <script>
+      function alphaOrder(str){
+         var arr = str.split("");
+         arr.sort();
+         var sortedStr = arr.join("");
+         return sortedStr
+      }
+      document.getElementById("result").innerHTML = alphaOrder("webdesigning")
+   </script>
+</body>
+</html>
